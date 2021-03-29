@@ -42,7 +42,7 @@ export default class Model{
     toggleCompleted(id){
         const index = this.findTodo(id);
         const todo = this.todos[index];
-        todo.completed = !todo.completed;
+        todo.completed = !todo.completed;   
         this.save();        
     }
 
